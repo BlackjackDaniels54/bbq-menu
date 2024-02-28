@@ -1,0 +1,106 @@
+@import '../variables';
+
+input {
+    /* Убираем все стили по умолчанию */
+    appearance: none;
+    border: none !important;
+    margin: 0;
+    padding: 0 ;
+    outline: none !important;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-align: inherit;
+    text-decoration: none;
+    cursor: text;
+    box-shadow: none !important;
+  }
+  
+  
+  button {
+    /* Убираем все стили по умолчанию */
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    /* Дополнительные свойства, если необходимо */
+  }
+  
+.main-container {
+    background-color: $light-black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.logo-container {
+    width: 65px;
+    text-align: center;
+}
+.logo-container > img {
+    width: 100%;
+    
+}
+
+.log-form {
+   
+}
+.form-container {
+    background-color: $dark-red;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    -webkit-box-shadow: 0px 0px 26px -1px rgba(219,26,26,1);
+        -moz-box-shadow: 0px 0px 26px -1px rgba(219,26,26,1);
+        box-shadow: 0px 0px 26px -1px rgba(219,26,26,1);
+}
+
+
+.main-title {
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.btn-custom {
+    background-color: $orange-yellow;
+    width: 60%;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+
+@media(hover:hover) {
+    .btn-custom:hover {
+        filter: brightness(0.95);
+    }
+}
+
+@media(hover:none) {
+    .btn-custom:active {
+        filter: brightness(1.05);
+    }
+}
+
+
+.custom_pass-container {
+    position: relative;
+}
+
+.show_eye_pass {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    bottom: 15px;
+}
