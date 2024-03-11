@@ -5,9 +5,9 @@ import './RegPage.scss';
 import logoCow from '../../resources/img/logo-cow.svg';
 import { LuEye } from "react-icons/lu";
 import useForm from '../../hooks/useForms';
-import Store from '../../store/store';
+import store from '../../store/store';
+import { observer } from 'mobx-react-lite';
 
-const store = new Store();
 
 
 function RegPage() {
@@ -22,10 +22,11 @@ function RegPage() {
 
   const regNewUser = async (e) => {
       e.preventDefault();
+      console.log(userData);
       const res = await store.registration(userData);
       
   }
-
+  
 
   return (
     <div className='main-container pt-5'>
@@ -87,4 +88,4 @@ function RegPage() {
   );
 }
 
-export default RegPage;
+export default observer(RegPage);

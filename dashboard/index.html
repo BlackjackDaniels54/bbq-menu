@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div id="overlay" class="overlay-block"></div>
+        <div id="sidebar" class="sidebar">
+                <div class="sidebar-inner-container">
+                    <div class="inner-sidebar-flex">
+                        <div class="profile">
+                            <div class="logo-container">
+                                <img src="src/Tony-Stark.webp" alt="logo">
+                            </div>
+                            <div class="profile-username">Jack</div>
+                            <div class="solid-icons-container">
+                                <i class="fa-solid fa-user-pen"></i>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </div>
+                            
+                        </div>
+                        <div class="tabs">
+                            <ul id="tabsContainer" class="tabs-container">
+                                <li>Усі товари</li>
+                                <li class="active">Додати товар</li>
+                                <li>Додати категорію</li>
+                                <li>Замовлення</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    <svg id="burger-icon" class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="80" >
+        <path
+            class="line top"
+            d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+        <path
+            class="line middle"
+            d="m 70,50 h -40" />
+        <path
+            class="line bottom"
+            d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+    </svg> 
+
+
+    <div class="container my-4">
+        <div class="search-container row justify-content-center">
+                <div class="col-8">
+                    <input placeholder="Пошук" type="text" class="p-2 search-input">
+                </div>
+                
+        </div>
+        
+    </div>
+    <div class="container main-info mt-10">
+        <div class="items-container">
+            <div class="item-container my-2 p-3">
+                
+                    
+                    <div class="number-img-price">
+                        <div class="item_number">1</div>
+                        <div class="img-container mx-1 mx-sm-3">
+                            <img src="src/chiken-burger.jpg" alt="">
+                        </div>
+                    
+                        <div class="item-name mx-1 mx-sm-3">Jack Burger</div>
+                        <div class="item-price">150$</div>
+                    
+                    </div>
+                
+                
+                    <div class="control-buttons">
+                        <div class="edit-btn btn-container">
+                            <button type="button" class="btn btn-primary"><i class="fa-regular fa-pen-to-square"></i></button>
+                        </div>
+                        <div class="hide-btn btn-container">
+                            <button type="button" class="btn btn-secondary"><i class="fa-regular fa-eye-slash"></i></button>
+                        </div>
+                        <div class="delete-btn btn-container">
+                            <button type="button" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button>
+                        </div>
+                    </div>
+             
+            </div>
+            
+     
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+          
+</html>

@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const $api = axios.create({
-    baseURL: 'http://localhost:7000/api', // Укажите ваш базовый URL
-    timeout: 10000, // Настройте таймаут запроса (в миллисекундах)
+    baseURL: 'https://2k373pwk-7000.euw.devtunnels.ms/api', 
+    timeout: 10000, 
     withCredentials: true
 });
 

@@ -1,4 +1,4 @@
-@import '../variables';
+@import '../../variables';
 
 input {
     /* Убираем все стили по умолчанию */
@@ -61,7 +61,7 @@ input {
     height: auto;
     border-radius: 20px;
     padding: 20px;
-    width: 600px;
+    max-width: 300px;
     -webkit-box-shadow: 0px 0px 26px -1px rgba(219,26,26,1);
         -moz-box-shadow: 0px 0px 26px -1px rgba(219,26,26,1);
         box-shadow: 0px 0px 26px -1px rgba(219,26,26,1);
@@ -76,7 +76,7 @@ input {
 
 .btn-custom {
     background-color: $orange-yellow;
-    width: 60%;
+    width: 70%;
     padding: 8px 0;
     border-radius: 5px;
 }
